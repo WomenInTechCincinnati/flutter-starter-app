@@ -8,16 +8,16 @@ class AppTheme {
 }
 
 const MaterialColor primaryMaterialColor = MaterialColor(0xFF007a7c, {
-  50: Color(0xFFE8EAF6),
-  100: Color(0xFFC5CAE9),
-  200: Color(0xFF9FA8DA),
-  300: Color(0xFF7986CB),
-  400: Color(0xFF5C6BC0),
-  500: Color(0xFF3F51B5),
-  600: Color(0xFF3949AB),
-  700: Color(0xFF303F9F),
-  800: Color(0xFF283593),
-  900: Color(0xFF1A237E),
+  50: Color(0xFFDFF6F6),
+  100: Color(0xFFB0E8E8),
+  200: Color(0xFF7DD9DA),
+  300: Color(0xFF4AC9CC),
+  400: Color(0xFF23BDC4),
+  500: Color(0xFF00B2BD),
+  600: Color(0xFF00A3AB),
+  700: Color(0xFF008E93),
+  800: Color(0xFF007a7c),
+  900: Color(0xFF055754),
 });
 
 const Color primaryColorTeal = Color(0xFF007a7c);
