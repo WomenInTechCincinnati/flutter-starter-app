@@ -76,10 +76,49 @@ class _MembersScreen extends State<MembersScreen> {
         child: Container(
             margin: EdgeInsets.all(10),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
-                  children: [Text(member.name)],
-                )
+                  children: [
+                    // TODO IMAGE
+                    Container(
+                      margin: EdgeInsets.fromLTRB(10.0, 0, 16.0, 0),
+                      width: 50.0,
+                      height: 50.0,
+                      decoration: BoxDecoration(
+                          color: primaryColorTeal, shape: BoxShape.circle),
+                    ),
+                    Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            member.name,
+                            style: TextStyle(
+                                fontSize: 20.0, color: primaryTextColor),
+                          ),
+                          Container(
+                            height: 3.0,
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.location_on,
+                                color: secondaryColorGrey,
+                                size: 18.0,
+                              ),
+                              // TODO LOCATION
+                              Text("Location")
+                            ],
+                          )
+                        ])
+                  ],
+                ),
+                // TODO HOBBIES
+                Row(),
+                // TODO TECHS
+                Row(),
+                // TODO LINKS
+                Row()
               ],
             )));
   }
