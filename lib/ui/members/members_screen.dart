@@ -43,14 +43,14 @@ class _MembersScreen extends State<MembersScreen> {
                     );
                   } else if (snapshot.hasData) {
                     if (snapshot.data.isNotEmpty) {
-                      List<Member> members = snapshot.data; 
-                      return ListView.builder(
-                          itemCount: members.length,
-                          itemBuilder: (context, i) {
-                            return Column(children: [
-                              Text(members[i].name)
-                            ]);
-                          });
+                      List<Member> members = snapshot.data;
+                      return Container(
+                          color: primaryColorLight,
+                          child: ListView.builder(
+                              itemCount: members.length,
+                              itemBuilder: (context, i) {
+                                return _buildMemberCard(members[i]);
+                              }));
                     } else {
                       return Container(
                         color: primaryColorLight,
@@ -70,4 +70,17 @@ class _MembersScreen extends State<MembersScreen> {
     );
   }
 
+  Widget _buildMemberCard(Member member) {
+    return Card(
+        margin: EdgeInsets.all(10),
+        child: Container(
+            margin: EdgeInsets.all(10),
+            child: Column(
+              children: [
+                Row(
+                  children: [Text(member.name)],
+                )
+              ],
+            )));
+  }
 }
