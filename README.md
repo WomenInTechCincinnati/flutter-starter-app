@@ -60,12 +60,12 @@ To see where you are in your folder system use `pwd`
 In "Development", we want to clone flutter so run the command: 
 `git clone https://github.com/flutter/flutter.git -b stable`
 
-Then you can add flutter to your path so that you can use flutter commands: 
-```export PATH="$PATH:`pwd`/flutter/bin"``` 
+Then you can add flutter to your path so that you can use flutter commands:   
+```export PATH="$PATH:`pwd`/flutter/bin"```   
 ^^ This will only set your PATH variable for the current terminal window. You can also permanently add Flutter to your path following the [macOS directions](https://flutter.dev/docs/get-started/install/macos#update-your-path) or [windows directions](https://flutter.dev/docs/get-started/install/windows#update-your-path) or the other [install directions](https://flutter.dev/docs/get-started/install). 
 
 Now (still in your current terminal), run `flutter doctor` - two important things should happen 
-- one, it should work 
+- one, it should work and you should see output (and NOT something about command not recognized)
 - two, you should see some errors because we haven't finished 
 
 Example: 
@@ -88,6 +88,9 @@ Doctor summary (to see all details, run flutter doctor -v):
 
 ! Doctor found issues in 2 categories.
 ```
+
+Better install some plugins then.. 
+
 ### Step Five - Add Plugins 
 You'll need install the Flutter and Dart Plugins to Android Studio (or IntelliJ). 
 How to do this from the menu bar: 
@@ -96,10 +99,12 @@ Android Studio -> preferences -> Plugins -> Marketplace -> search for and instal
 Boom you're done - Android Studio is set up and ready for some Flutter development! 
 
 Where's my Dart SDK?  
-`/Path/to/Maybe/Development/flutter/bin/cache/dart-sdk`  
+`/Path/to/Maybe/Development/flutter/bin/cache/dart-sdk`   
 Where you'll need to replace the beginning of the path with where you actually cloned Flutter. 
 
 Side note - I learned today that flutter doctor might not actually reflect that these plugins were installed. It checks a very specific regex pattern for where it expects things to be and if anything is askew, it will continue to give warnings. Don't worry if this happens. 
+
+It also might yell at you because you haven't installed / set up xcode but ¯\_(ツ)_/¯ we don't need it for this. 
 
 ### Final notes 
 I recommend putting all of your projects for this event in the same folder - whether that be your development folder or something you made just for today! So when it comes time to fork the flutter app, run the command from the same directory where you cloned flutter. 
