@@ -61,7 +61,7 @@ In "Development", we want to clone flutter so run the command:
 `git clone https://github.com/flutter/flutter.git -b stable`
 
 Then you can add flutter to your path so that you can use flutter commands: 
-`export PATH="$PATH:`pwd`/flutter/bin"`  
+```export PATH="$PATH:`pwd`/flutter/bin"``` 
 ^^ This will only set your PATH variable for the current terminal window. You can also permanently add Flutter to your path following the [macOS directions](https://flutter.dev/docs/get-started/install/macos#update-your-path) or [windows directions](https://flutter.dev/docs/get-started/install/windows#update-your-path) or the other [install directions](https://flutter.dev/docs/get-started/install). 
 
 Now (still in your current terminal), run `flutter doctor` - two important things should happen 
@@ -95,8 +95,8 @@ Android Studio -> preferences -> Plugins -> Marketplace -> search for and instal
 
 Boom you're done - Android Studio is set up and ready for some Flutter development! 
 
-Where's my Dart SDK? 
-`/Path/to/Maybe/Development/flutter/bin/cache/dart-sdk`
+Where's my Dart SDK?  
+`/Path/to/Maybe/Development/flutter/bin/cache/dart-sdk`  
 Where you'll need to replace the beginning of the path with where you actually cloned Flutter. 
 
 Side note - I learned today that flutter doctor might not actually reflect that these plugins were installed. It checks a very specific regex pattern for where it expects things to be and if anything is askew, it will continue to give warnings. Don't worry if this happens. 
