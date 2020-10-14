@@ -45,16 +45,16 @@ This installs the latest Android SDK, Android SDK Command-line Tools, and Androi
 
 ### Step Three - Open your Terminal 
 
-Okay so the reason that we installed AS first is that no we can all use the same terminal - AS has a terminal built into the IDE (so does IntelliJ) and Flutter installation requires a terminal. 
+Okay so the reason that we installed AS first is that now we can all use the same terminal - AS has a terminal built into the IDE (so does IntelliJ) and Flutter installation requires a terminal. 
 
 Where to find your terminal - along the bottom of the IDE you should see some tabs and one should be terminal. If it's not there, you can also add it by going view -> tool window -> terminal. 
 
-PS - you may need to open a project to make the full IDE open. AS is still a IDE so you can open something as imple as txt file and be good to go. 
+PS - you may need to open a project to make the full IDE open. AS is still an IDE so you can open something as simple as a txt file and be good to go. 
 
 ### Step Four - Actual Flutter things 
 Now we can jump back to the start of the installation guide. 
 
-So now we're in our teminal and specifically we want to be in our "Development" directory 
+So now we're in our terminal and specifically we want to be in our "Development" directory 
  
 To navigate in the teminal, you can use `cd` - to go up one folder use `cd ..` and to go into a folder use `cd FolderName/` (tab will help you autofill names as well).  
 To see where you are in your folder system use `pwd`
@@ -94,9 +94,9 @@ Doctor summary (to see all details, run flutter doctor -v):
 Better install some plugins then.. 
 
 ### Step Five - Add Plugins 
-You'll need install the Flutter and Dart Plugins to Android Studio (or IntelliJ). 
+You'll need to install the Flutter and Dart Plugins to Android Studio (or IntelliJ). 
 How to do this from the menu bar: 
-Android Studio -> preferences -> Plugins -> Marketplace -> search for and install Dart and Flutter (After the installation, you should be prompted to restart AS). 
+Android Studio -> Preferences -> Plugins -> Marketplace -> search for and install Dart and Flutter (After the installation, you should be prompted to restart AS). 
 
 Boom you're done - Android Studio is set up and ready for some Flutter development! 
 
@@ -112,7 +112,7 @@ It also might yell at you because you haven't installed / set up xcode but ¯\_(
 
 You can definitely build it on your phone if you're comfortable putting your Android device in developer mode. To install to an iPhone, you'll need xcode installed and set up AND an apple developer account to install to a physical device (I think). 
 
-To make a new emulator, you'll need to open your AVD (Android Virtual Device) Manager - this is an icon along the top that looks like an outline of a phone with a little android logo at the bottom. Then `+ Create Virtual Device...`. It iwll walk you through the steps of everything you need to download to make a new device - you'll have to pick a phone (I usually pick a Pixel) and then select a system image (API 30 is the latest - you'll probably have to download this first) and then you can name and create it. Now you'll be able to run the app on your new virtual device!   
+To make a new emulator, you'll need to open your AVD (Android Virtual Device) Manager - this is an icon along the top that looks like an outline of a phone with a little android logo at the bottom. Then `+ Create Virtual Device...`. It will walk you through the steps of everything you need to download to make a new device - you'll have to pick a phone (I usually pick a Pixel) and then select a system image (API 30 is the latest - you'll probably have to download this first) and then you can name and create it. Now you'll be able to run the app on your new virtual device!   
 
 ### Final notes 
 I recommend putting all of your projects for this event in the same folder - whether that be your development folder or something you made just for today! So when it comes time to fork the flutter app, run the command from the same directory where you cloned flutter. 
