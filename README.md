@@ -15,6 +15,8 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+## Installing Flutter
+
 ### Helpful tips and tricks to get ready to contibute to our flutter project.
 
 While the official [Flutter installation guide](https://flutter.dev/docs/get-started/install) technically has everything you need, here are some more explicit directions and trouble shooting to make it as easy as possible. 
