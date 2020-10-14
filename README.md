@@ -54,14 +54,14 @@ Now we can jump back to the start of the installation guide.
 
 So now we're in our teminal and specifically we want to be in our "Development" directory 
  
-To navigate in the teminal, you can use `cd` - to go up one folder use `cd ..` and to go into a folder use `cd FolderName/` (ab will help you autofill names as well).  
+To navigate in the teminal, you can use `cd` - to go up one folder use `cd ..` and to go into a folder use `cd FolderName/` (tab will help you autofill names as well).  
 To see where you are in your folder system use `pwd`
 
 In "Development", we want to clone flutter so run the command: 
 `git clone https://github.com/flutter/flutter.git -b stable`
 
 Then you can add flutter to your path so that you can use flutter commands: 
-`export PATH="$PATH:`pwd`/flutter/bin"`
+`export PATH="$PATH:`pwd`/flutter/bin"`  
 ^^ This will only set your PATH variable for the current terminal window. You can also permanently add Flutter to your path following the [macOS directions](https://flutter.dev/docs/get-started/install/macos#update-your-path) or [windows directions](https://flutter.dev/docs/get-started/install/windows#update-your-path) or the other [install directions](https://flutter.dev/docs/get-started/install). 
 
 Now (still in your current terminal), run `flutter doctor` - two important things should happen 
