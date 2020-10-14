@@ -108,6 +108,12 @@ Side note - I learned today that flutter doctor might not actually reflect that 
 
 It also might yell at you because you haven't installed / set up xcode but ¯\_(ツ)_/¯ we don't need it for this. 
 
+### Step Six - it might be helpful to make an Emulator to build this on 
+
+You can definitely build it on your phone if you're comfortable putting your Android device in developer mode. To install to an iPhone, you'll need xcode installed and set up AND an apple developer account to install to a physical device (I think). 
+
+To make a new emulator, you'll need to open your AVD (Android Virtual Device) Manager - this is an icon along the top that looks like an outline of a phone with a little android logo at the bottom. Then `+ Create Virtual Device...`. It iwll walk you through the steps of everything you need to download to make a new device - you'll have to pick a phone (I usually pick a Pixel) and then select a system image (API 30 is the latest - you'll probably have to download this first) and then you can name and create it. Now you'll be able to run the app on your new virtual device!   
+
 ### Final notes 
 I recommend putting all of your projects for this event in the same folder - whether that be your development folder or something you made just for today! So when it comes time to fork the flutter app, run the command from the same directory where you cloned flutter. 
 
