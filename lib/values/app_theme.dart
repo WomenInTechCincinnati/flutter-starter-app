@@ -28,3 +28,26 @@ const Color accentColorNavy = Color(0xFF0F283C);
 const Color accentColorWhite = Color(0xFFF5F5F5);
 
 const Color primaryTextColor = secondaryColorGrey;
+
+const ColorFilter greyScaleColorFilter = ColorFilter.matrix(<double>[
+  0.2126,
+  0.7152,
+  0.0722,
+  0,
+  0,
+  0.2126,
+  0.7152,
+  0.0722,
+  0,
+  0,
+  0.2126,
+  0.7152,
+  0.0722,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0,
+]);

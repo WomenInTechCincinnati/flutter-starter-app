@@ -9,14 +9,20 @@ part 'member.g.dart';
 class Member extends Equatable {
 
   @JsonKey(name: "name")
-  final String name; 
-  
+  final String name;
+
+  @JsonKey(name: "image_url")
+  final String imageUrl;
+
+  @JsonKey(name: "location")
+  final String location;
+
   Member({
-    this.name
+    this.name, this.imageUrl, this.location
   });
 
   @override
-  List<Object> get props => [name];
+  List<Object> get props => [name, imageUrl, location];
 
   @override
   bool get stringify => true;

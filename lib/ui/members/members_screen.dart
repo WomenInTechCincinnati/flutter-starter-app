@@ -72,22 +72,28 @@ class _MembersScreen extends State<MembersScreen> {
 
   Widget _buildMemberCard(Member member) {
     return Card(
-        margin: EdgeInsets.all(10),
+        color: accentColorWhite,
+        margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
         child: Container(
-            margin: EdgeInsets.all(10),
+            margin: EdgeInsets.all(20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
-                    // TODO IMAGE
                     Container(
-                      margin: EdgeInsets.fromLTRB(10.0, 0, 16.0, 0),
-                      width: 50.0,
-                      height: 50.0,
-                      decoration: BoxDecoration(
-                          color: primaryColorTeal, shape: BoxShape.circle),
-                    ),
+                        margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                        child: CircleAvatar(
+                          radius: 55,
+                          backgroundColor: primaryColorTeal,
+                          child: ColorFiltered(
+                            child: CircleAvatar(
+                              radius: 50,
+                              backgroundImage: NetworkImage(member.imageUrl),
+                            ),
+                            colorFilter: greyScaleColorFilter,
+                          ),
+                        )),
                     Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -107,7 +113,11 @@ class _MembersScreen extends State<MembersScreen> {
                                 size: 18.0,
                               ),
                               // TODO LOCATION
-                              Text("Location")
+                              Text(member.location,
+                                style: TextStyle(
+                                    color: primaryTextColor
+                                ),
+                              )
                             ],
                           )
                         ])
