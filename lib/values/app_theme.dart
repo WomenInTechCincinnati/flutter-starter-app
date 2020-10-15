@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static ThemeData createThemeData() => ThemeData(
+      scaffoldBackgroundColor: primaryColorLight,
       primarySwatch: primaryMaterialColor,
       disabledColor: primaryColorLight
   );
