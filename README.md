@@ -49,7 +49,7 @@ Okay so the reason that we installed AS first is that now we can all use the sam
 
 Where to find your terminal - along the bottom of the IDE you should see some tabs and one should be terminal. If it's not there, you can also add it by going View -> Tool Window -> Terminal. 
 
-PS - you may need to open a project to make the full IDE open. AS is still an IDE so you can open something as simple as txt file and be good to go. 
+PS - you may need to open a project to make the full IDE open. AS is still an IDE so you can open something as simple as a txt file and be good to go. 
 
 ### Step Four - Actual Flutter things 
 Now we can jump back to the start of the installation guide. 
@@ -96,7 +96,7 @@ Doctor summary (to see all details, run flutter doctor -v):
 Better install some plugins then.. 
 
 ### Step Five - Add Plugins 
-You'll need install the Flutter and Dart Plugins to Android Studio (or IntelliJ). 
+You'll need to install the Flutter and Dart Plugins to Android Studio (or IntelliJ). 
 How to do this from the menu bar: 
 Android Studio -> Preferences -> Plugins -> Marketplace -> search for and install Dart and Flutter (After the installation, you should be prompted to restart AS). 
 
@@ -104,7 +104,7 @@ Boom you're done - Android Studio is set up and ready for some Flutter developme
 
 Where's my Dart SDK?  
 `/Path/to/Maybe/Development/flutter/bin/cache/dart-sdk`   
-Where you'll need to replace the beginning of the path with where you actually cloned Flutter. Reminder: you can check out you current path by running `pwd` (present working directory) in your terminal.
+Where you'll need to replace the beginning of the path with where you actually cloned Flutter. Reminder: you can check out your current path by running `pwd` (present working directory) in your terminal.
 
 Side note - I learned today that flutter doctor might not actually reflect that these plugins were installed. It checks a very specific regex pattern for where it expects things to be and if anything is askew, it will continue to give warnings. If Flutter and Dart are marked installed in AS, you can ignore flutter doctor plugin warnings! 
 
