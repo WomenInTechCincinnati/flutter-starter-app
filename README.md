@@ -1,6 +1,6 @@
 # flutter_app
 
-A new Flutter application for women who code cincinnati 
+A new Flutter application for Women Who Code Cincinnati 
 
 ## Getting Started
 
@@ -19,17 +19,17 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Helpful tips and tricks to get ready to contibute to our flutter project.
 
-While the official [Flutter installation guide](https://flutter.dev/docs/get-started/install) technically has everything you need, here are some more explicit directions and trouble shooting to make it as easy as possible. 
+While the official [Flutter installation guide](https://flutter.dev/docs/get-started/install) technically has everything you need, here are some more explicit directions and troubleshooting to make it as easy as possible. 
 
 Some assumptions I'm making: that you have git installed and understanding cloning. Not the case? That's okay - check out this [beginner friendly tutorial](https://youtu.be/ZRrzSAz9uOo) from our meeting last month to get started. 
 
-A couple helpful hints before we get started, it would be helpful to put everything in one place. I have one "Development" folder where all these things (and my other projects live). If you you're excited to build more things, it might be helpful to make your own "Development" folder to keep all your git repos in one place. If you're not sure yet, I would recommend making a "WWCode" folder to hold everything we do here (and maybe our [Gatsby site](https://github.com/WomenWhoCodeCincy/WomenWhoCodeCincy.github.io) and our [database](https://github.com/WomenWhoCodeCincy/wwcode-cincy-database)). 
+A couple helpful hints before we get started: it would be helpful to put everything in one place. I have one "Development" folder where all these things (and my other projects live). If you're excited to build more things, it might be helpful to make your own "Development" folder to keep all your git repos in one place. If you're not sure yet, I would recommend making a "WWCode" folder to hold everything we do here (and maybe our [Gatsby site](https://github.com/WomenWhoCodeCincy/WomenWhoCodeCincy.github.io) and our [database](https://github.com/WomenWhoCodeCincy/wwcode-cincy-database)). 
 
 ### Step One - Install Android Studio 4.1 (or use IntelliJ ** )
 
 You might notice this is a different step one than the install guide but bare with me. 
 
-Two major reason we're using Android Studio (or IntelliJ), these tools are available on all operating systems so we can all be looking at the same thing AND I use them regularly and so I can help troubleshoot if you run into problem. 
+Two major reasons we're using Android Studio (or IntelliJ): these tools are available on all operating systems so we can all be looking at the same thing AND I use them regularly and so I can help troubleshoot if you run into problem. 
 
 Download Android Studio [here](https://developer.android.com/studio).  
 
@@ -47,17 +47,19 @@ This installs the latest Android SDK, Android SDK Command-line Tools, and Androi
 
 Okay so the reason that we installed AS first is that now we can all use the same terminal - AS has a terminal built into the IDE (so does IntelliJ) and Flutter installation requires a terminal. 
 
-Where to find your terminal - along the bottom of the IDE you should see some tabs and one should be terminal. If it's not there, you can also add it by going view -> tool window -> terminal. 
+Where to find your terminal - along the bottom of the IDE you should see some tabs and one should be terminal. If it's not there, you can also add it by going View -> Tool Window -> Terminal. 
 
-PS - you may need to open a project to make the full IDE open. AS is still an IDE so you can open something as simple as a txt file and be good to go. 
+PS - you may need to open a project to make the full IDE open. AS is still an IDE so you can open something as simple as txt file and be good to go. 
 
 ### Step Four - Actual Flutter things 
 Now we can jump back to the start of the installation guide. 
 
-So now we're in our terminal and specifically we want to be in our "Development" directory 
+So now we're in our terminal and specifically we want to be in our "Development" directory or "WWCode" depending on how you named your folder.
  
-To navigate in the teminal, you can use `cd` - to go up one folder use `cd ..` and to go into a folder use `cd FolderName/` (tab will help you autofill names as well).  
-To see where you are in your folder system use `pwd`
+To navigate in the terminal, you can use `cd`...
+- to go up one folder use `cd ..`
+- to go into a folder use `cd FolderName/` (tab will help you autofill names as well).  
+- to see where you are in your folder system use `pwd`
 
 In "Development", we want to clone flutter so run the command: 
 `git clone https://github.com/flutter/flutter.git -b stable`
@@ -94,7 +96,7 @@ Doctor summary (to see all details, run flutter doctor -v):
 Better install some plugins then.. 
 
 ### Step Five - Add Plugins 
-You'll need to install the Flutter and Dart Plugins to Android Studio (or IntelliJ). 
+You'll need install the Flutter and Dart Plugins to Android Studio (or IntelliJ). 
 How to do this from the menu bar: 
 Android Studio -> Preferences -> Plugins -> Marketplace -> search for and install Dart and Flutter (After the installation, you should be prompted to restart AS). 
 
@@ -102,9 +104,9 @@ Boom you're done - Android Studio is set up and ready for some Flutter developme
 
 Where's my Dart SDK?  
 `/Path/to/Maybe/Development/flutter/bin/cache/dart-sdk`   
-Where you'll need to replace the beginning of the path with where you actually cloned Flutter. 
+Where you'll need to replace the beginning of the path with where you actually cloned Flutter. Reminder: you can check out you current path by running `pwd` (present working directory) in your terminal.
 
-Side note - I learned today that flutter doctor might not actually reflect that these plugins were installed. It checks a very specific regex pattern for where it expects things to be and if anything is askew, it will continue to give warnings. Don't worry if this happens. 
+Side note - I learned today that flutter doctor might not actually reflect that these plugins were installed. It checks a very specific regex pattern for where it expects things to be and if anything is askew, it will continue to give warnings. If Flutter and Dart are marked installed in AS, you can ignore flutter doctor plugin warnings! 
 
 It also might yell at you because you haven't installed / set up xcode but ¯\_(ツ)_/¯ we don't need it for this. 
 
