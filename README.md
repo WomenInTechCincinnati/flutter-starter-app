@@ -1,19 +1,58 @@
-# flutter_app
+<p align="center">
+  <a href="https://womenwhocodecincy.github.io/">
+    <img alt="WWC" src="assets/wwcode-launcher-icon.png" width="100" />
+  </a>
+</p>
+<h1 align="center">
+  Women Who Code Cincinnati
+</h1>
 
-A new Flutter application for Women Who Code Cincinnati 
+Welcome to the Cincinnati Women Who Code starter flutter app repository, a Flutter project that showcases members and shares resources. Collaboration is welcome and encouraged!
 
-## Getting Started
+## 🚀 Quick start guide to contributing
 
-This project is a starting point for a Flutter application.
+1. **Locate an issue that needs work**
 
-A few resources to get you started if this is your first Flutter project:
+    Navigate to the [issues tab](https://github.com/WomenWhoCodeCincy/flutter-starter-app/issues) and review the list of open issues.
+    When ready to work an issue, place a comment on the issue so others know it is being worked by you.  And PLEASE only comment if you plan to work the issue immediately. 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+2.  **Fork the repository**
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+     In the upper right-hand corner, click on <img alt="WWC" src="assets/fork.png" width="50" /> to fork this repo to your github account.
+
+3. **Clone the repository**
+
+    Navigate to your github account and locate the newly forked flutter-starter-app repo.
+    Click the <img alt="WWC" src="assets/code.png" width="50" /> button and copy the url.
+    Using the command line or your favorite method of interacting with git, clone the repo
+    ```shell
+      git clone -b pasteInTheRepoNameHere
+      ```
+    
+      Change directory into the root of the repo 
+      ```shell
+      cd flutter-starter-app
+      ```
+4.  **Create a branch**
+
+    Create a new branch off of the main branch. Please name the branch in a manner that is indicative of the issue being resolved.
+    ```shell
+    git checkout -b myNewBranchName
+    ```
+
+5.  **Open the source code and start editing!**
+   
+    Open the `flutter-starter-app` directory in your code editor of choice and start working!!!
+
+6. **Create a pull request**
+
+    Once your changes have been completed and tested, push your branch to your repo. In github, navigate to the fork you created of the flutter-starter-app repo. Click on Pull Requests in the main menu and select New Pull Request. 
+    Under the Compare Changes title, click on compare across forks. This will pre-populate the repos and branches to be merged. Verify that the head repo is your forked repo and the branch is your branch. Verify that the base repo is the flutter-starter-app repo and the branch is main.
+  <img alt="WWC" src="assets/prRepos.png" width="850" /> 
+  Click create pull request. The Open Pull Request page will appear which includes the pull request template for the base repo. Please complete the template and click Create Pull Request.
+  On the right hand side of the screen, click on reviewers and select Sierra OBryan
+  <img alt="WWC" src="assets/prReviewers.png" width="250" />
+  You are now done and your pull request will be code reviewed. You will be notified regarding any feedback and when it has been approved.
 
 ## Installing Flutter
 
@@ -124,6 +163,20 @@ To make a new emulator, you'll need to open your AVD (Android Virtual Device) Ma
 I recommend putting all of your projects for this event in the same folder - whether that be your development folder or something you made just for today! So when it comes time to fork the flutter app, run the command from the same directory where you cloned flutter. 
 
 Many thanks to [Erica](https://github.com/librairica) for helping me find pain points to setting up Flutter from scratch! 
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+
 
 
 
