@@ -37,6 +37,8 @@ This is a doozey of a step and will take some time. It might be useful to have i
 
 ** IntelliJ also has Flutter and Dart support so if you already have IntelliJ and would prefer to use that you can skip this step. 
 
+In addition to Android Studio and IntelliJ, you can also use VSCode to write and edit Flutter (and I know people who do and prefer it!). If you're familiar with VSCode and it would make you more comfortable to use that instead, feel free. As a disclaimer, I do not use VSCode (for anything, often) so (again) I might struggle to help troubleshoot if you run into problems but Google can probably help us work through it! 
+
 You can also download Xcode if you're interested in running it on an iPhone but spoiler: this is also a long process so prepare yourself. It will not be used on Saturday! 
 
 ### Step Two - Start Android Studio and go through the Setup Wizard.
