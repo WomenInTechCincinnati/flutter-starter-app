@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:async/async.dart';
 import 'package:flutter_app/app/clients/wwcode_api_client.dart';
-import 'package:flutter_app/app/models/member.dart';
+import 'package:flutter_app/data/models/member.dart';
 import 'package:flutter_app/utils/app_exception.dart';
 import 'package:http/http.dart';
 

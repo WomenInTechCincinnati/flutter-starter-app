@@ -1,5 +1,5 @@
 import 'package:flutter_app/app/interactors/wwcode_api_interactor.dart';
-import 'package:flutter_app/app/models/member.dart';
+import 'package:flutter_app/data/models/member.dart';
 import 'package:rxdart/rxdart.dart';
 
 class MemberInteractor {

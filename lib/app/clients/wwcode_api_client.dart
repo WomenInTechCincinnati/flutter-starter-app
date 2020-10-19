@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:flutter_app/app/models/api_exception.dart';
+import 'package:flutter_app/data/models/api_exception.dart';
 import 'package:flutter_app/utils/app_exception.dart';
 import 'package:flutter_app/values/variants.dart';
 import 'package:http/http.dart' as http;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/app/models/member.dart';
+import 'package:flutter_app/data/models/member.dart';
 import 'package:flutter_app/ui/members/members_viewmodel.dart';
 import 'package:flutter_app/values/app_theme.dart';
 import 'package:provider/provider.dart';
