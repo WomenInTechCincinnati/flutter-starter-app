@@ -64,7 +64,7 @@ Some assumptions I'm making: that you have git installed and understanding cloni
 
 A couple helpful hints before we get started: it would be helpful to put everything in one place. I have one "Development" folder where all these things (and my other projects live). If you're excited to build more things, it might be helpful to make your own "Development" folder to keep all your git repos in one place. If you're not sure yet, I would recommend making a "WWCode" folder to hold everything we do here (and maybe our [Gatsby site](https://github.com/WomenWhoCodeCincy/WomenWhoCodeCincy.github.io) and our [database](https://github.com/WomenWhoCodeCincy/wwcode-cincy-database)). 
 
-### Step One - Install Android Studio 4.1 (or use IntelliJ ** )
+1. **Install Android Studio 4.1 (or use IntelliJ* )** 
 
 You might notice this is a different step one than the install guide but bare with me. 
 
@@ -74,17 +74,17 @@ Download Android Studio [here](https://developer.android.com/studio).
 
 This is a doozey of a step and will take some time. It might be useful to have it done before the event so you can clone the project and have it opened to follow along but not eveyrone learns that way. It's totally okay if you have not downloaded it before the event - we'll offer a quick reminder to start the process when we kick off but you can also just hang out and watch and do it later in your own free time. 
 
-** IntelliJ also has Flutter and Dart support so if you already have IntelliJ and would prefer to use that you can skip this step. 
+*IntelliJ also has Flutter and Dart support so if you already have IntelliJ and would prefer to use that you can skip this step. 
 
 In addition to Android Studio and IntelliJ, you can also use VSCode to write and edit Flutter (and I know people who do and prefer it!). If you're familiar with VSCode and it would make you more comfortable to use that instead, feel free. As a disclaimer, I do not use VSCode (for anything, often) so (again) I might struggle to help troubleshoot if you run into problems but Google can probably help us work through it! 
 
 You can also download Xcode if you're interested in running it on an iPhone but spoiler: this is also a long process so prepare yourself. It will not be used on Saturday! 
 
-### Step Two - Start Android Studio and go through the Setup Wizard.
+2.  **Start Android Studio and go through the Setup Wizard.**
 
 This installs the latest Android SDK, Android SDK Command-line Tools, and Android SDK Build-Tools, which are required by Flutter when developing for Android. (:
 
-### Step Three - Open your Terminal 
+3. **Open your Terminal** 
 
 Okay so the reason that we installed AS first is that now we can all use the same terminal - AS has a terminal built into the IDE (so does IntelliJ) and Flutter installation requires a terminal. 
 
@@ -92,7 +92,7 @@ Where to find your terminal - along the bottom of the IDE you should see some ta
 
 PS - you may need to open a project to make the full IDE open. AS is still an IDE so you can open something as simple as a txt file and be good to go. 
 
-### Step Four - Actual Flutter things 
+4. **Actual Flutter things**
 Now we can jump back to the start of the installation guide. 
 
 So now we're in our terminal and specifically we want to be in our "Development" directory or "WWCode" depending on how you named your folder.
@@ -136,7 +136,7 @@ Doctor summary (to see all details, run flutter doctor -v):
 
 Better install some plugins then.. 
 
-### Step Five - Add Plugins 
+5. **Add Plugins**
 You'll need to install the Flutter and Dart Plugins to Android Studio (or IntelliJ). 
 How to do this from the menu bar: 
 Android Studio -> Preferences -> Plugins -> Marketplace -> search for and install Dart and Flutter (After the installation, you should be prompted to restart AS). 
@@ -153,13 +153,13 @@ Side note - I learned today that flutter doctor might not actually reflect that 
 
 It also might yell at you because you haven't installed / set up xcode but ¯\_(ツ)_/¯ we don't need it for this. 
 
-### Step Six - it might be helpful to make an Emulator to build this on 
+6. **It might be helpful to create an Emulator to run this on**
 
 You can definitely build it on your phone if you're comfortable putting your Android device in developer mode. To install to an iPhone, you'll need xcode installed and set up AND an apple developer account to install to a physical device (I think). 
 
 To make a new emulator, you'll need to open your AVD (Android Virtual Device) Manager - this is an icon along the top that looks like an outline of a phone with a little android logo at the bottom. Then `+ Create Virtual Device...`. It will walk you through the steps of everything you need to download to make a new device - you'll have to pick a phone (I usually pick a Pixel) and then select a system image (API 30 is the latest - you'll probably have to download this first) and then you can name and create it. Now you'll be able to run the app on your new virtual device!   
 
-### Final notes 
+**Final notes**
 I recommend putting all of your projects for this event in the same folder - whether that be your development folder or something you made just for today! So when it comes time to fork the flutter app, run the command from the same directory where you cloned flutter. 
 
 Many thanks to [Erica](https://github.com/librairica) for helping me find pain points to setting up Flutter from scratch! 
