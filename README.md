@@ -104,7 +104,9 @@ Boom you're done - Android Studio is set up and ready for some Flutter developme
 
 Where's my Dart SDK?  
 `/Path/to/Maybe/Development/flutter/bin/cache/dart-sdk`   
-Where you'll need to replace the beginning of the path with where you actually cloned Flutter. Reminder: you can check out your current path by running `pwd` (present working directory) in your terminal.
+Where you'll need to replace the beginning of the path with where you actually cloned Flutter. 
+
+Reminder: you can check out your current path by running `pwd` (present working directory) in your terminal.
 
 Side note - I learned today that flutter doctor might not actually reflect that these plugins were installed. It checks a very specific regex pattern for where it expects things to be and if anything is askew, it will continue to give warnings. If Flutter and Dart are marked installed in AS, you can ignore flutter doctor plugin warnings! 
 
