@@ -9,6 +9,10 @@
 
 Welcome to the Cincinnati Women Who Code starter flutter app repository, a Flutter project that showcases members and shares resources. Collaboration is welcome and encouraged!
 
+[Quick start guide to contributing](https://github.com/WomenWhoCodeCincy/flutter-starter-app#-quick-start-guide-to-contributing)  
+[Installing Flutter](https://github.com/WomenWhoCodeCincy/flutter-starter-app#installing-flutter)   
+[Flutter Links](https://github.com/WomenWhoCodeCincy/flutter-starter-app#getting-started) 
+
 ## 🚀 Quick start guide to contributing
 
 1. **Locate an issue that needs work**
@@ -46,8 +50,7 @@ Welcome to the Cincinnati Women Who Code starter flutter app repository, a Flutt
 
 6. **Create a pull request**
 
-    Once your changes have been completed and tested, push your branch to your repo. In github, navigate to the fork you created of the flutter-starter-app repo. Click on Pull Requests in the main menu and select New Pull Request. 
-    Under the Compare Changes title, click on compare across forks. This will pre-populate the repos and branches to be merged. Verify that the head repo is your forked repo and the branch is your branch. Verify that the base repo is the flutter-starter-app repo and the branch is main.
+    Once your changes have been completed and tested, push your branch to your repo. In github, navigate to the fork you created of the flutter-starter-app repo.       Click on Pull Requests in the main menu and select New Pull Request. Under the Compare Changes title, click on compare across forks. This will pre-populate the repos and branches to be merged. Verify that the head repo is your forked repo and the branch is your branch. Verify that the base repo is the flutter-starter-app repo and the branch is main.
   <img alt="WWC" src="assets/prRepos.png" width="850" /> 
   Click create pull request. The Open Pull Request page will appear which includes the pull request template for the base repo. Please complete the template and click Create Pull Request.
   On the right hand side of the screen, click on reviewers and select Sierra OBryan
