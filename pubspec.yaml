@@ -33,7 +33,7 @@ dev_dependencies:
   json_serializable: ^3.2.0
 
 flutter_icons:
-  image_path: "assets/sentriconnect-launcher-icon.png"
+  image_path: "assets/wwcode-launcher-icon.png"
   android: true
   ios: true
 
