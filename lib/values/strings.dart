@@ -4,4 +4,6 @@ class Strings {
   static String get quotes => "Quotes";
   static String get resources => "Resources";
   static String get contact => "Contact";
+  static String get hobbies => "Hobbies:";
+  static String get techs => "Techs:";
 }

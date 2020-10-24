@@ -17,8 +17,14 @@ class Member extends Equatable {
   @JsonKey(name: "location")
   final String location;
 
+  @JsonKey(name: "hobbies")
+  final List<String> hobbyList;
+
+  @JsonKey(name: "favorite_techs")
+  final List<String> favoriteTechs;
+
   Member({
-    this.name, this.imageUrl, this.location
+    this.name, this.imageUrl, this.location, this.hobbyList, this.favoriteTechs
   });
 
   @override

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/data/models/member.dart';
 import 'package:flutter_app/ui/members/members_viewmodel.dart';
 import 'package:flutter_app/values/app_theme.dart';
+import 'package:flutter_app/values/strings.dart';
 import 'package:provider/provider.dart';
 
 class MembersScreen extends StatefulWidget {
@@ -84,7 +85,7 @@ class _MembersScreen extends State<MembersScreen> {
                 Row(
                   children: [
                     Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                        margin: EdgeInsets.fromLTRB(0, 0, 10, 10),
                         child: CircleAvatar(
                           radius: 55,
                           backgroundColor: primaryColorTeal,
@@ -125,12 +126,38 @@ class _MembersScreen extends State<MembersScreen> {
                   ],
                 ),
                 // TODO HOBBIES
-                Row(),
+                _buildHobbyList(member),
+                Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                ),
                 // TODO TECHS
-                Row(),
+                _buildTechList(member),
                 // TODO LINKS
                 Row()
               ],
             )));
+  }
+
+  Widget _buildHobbyList(Member member) {
+    return Wrap(
+      spacing: 5.0,
+      children: [
+        Text(Strings.hobbies, style: TextStyle(color: primaryTextColor),),
+        for (var hobby in member.hobbyList)
+          Text(hobby, style: TextStyle(color: primaryTextColor),),
+      ],
+    );
+  }
+
+
+  Widget _buildTechList(Member member) {
+    return Wrap(
+      spacing: 5.0,
+      children: [
+        Text(Strings.techs, style: TextStyle(color: primaryTextColor),),
+        for (var tech in member.favoriteTechs)
+          Text(tech, style: TextStyle(color: primaryTextColor),),
+      ],
+    );
   }
 }
