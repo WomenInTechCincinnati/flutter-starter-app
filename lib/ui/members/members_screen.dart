@@ -38,6 +38,7 @@ class _MembersScreen extends State<MembersScreen> {
                 builder: (final BuildContext context,
                     final AsyncSnapshot<List<Member>> snapshot) {
                   if (snapshot.hasError) {
+                    // TODO DISPLAY ERROR SCREEN
                     return Container(
                       color: primaryColorLight,
                     );
@@ -52,6 +53,7 @@ class _MembersScreen extends State<MembersScreen> {
                                 return _buildMemberCard(members[i]);
                               }));
                     } else {
+                      // TODO DISPLAY EMPTY STATE SCREEN
                       return Container(
                         color: primaryColorLight,
                       );
@@ -112,7 +114,6 @@ class _MembersScreen extends State<MembersScreen> {
                                 color: secondaryColorGrey,
                                 size: 18.0,
                               ),
-                              // TODO LOCATION
                               Text(member.location,
                                 style: TextStyle(
                                     color: primaryTextColor
