@@ -140,9 +140,13 @@ class _MembersScreen extends State<MembersScreen> {
 
   Widget _buildHobbyList(Member member) {
     return Wrap(
-      spacing: 5.0,
+      spacing: 8.0,
+      runSpacing: 2.0,
       children: [
-        Text(Strings.hobbies, style: TextStyle(color: primaryTextColor),),
+        Text(Strings.hobbies,
+          style: TextStyle(
+            color: primaryTextColor, fontWeight: FontWeight.bold
+          ),),
         for (var hobby in member.hobbyList)
           Text(hobby, style: TextStyle(color: primaryTextColor),),
       ],
@@ -152,9 +156,14 @@ class _MembersScreen extends State<MembersScreen> {
 
   Widget _buildTechList(Member member) {
     return Wrap(
-      spacing: 5.0,
+      spacing: 8.0,
+      runSpacing: 2.0,
       children: [
-        Text(Strings.techs, style: TextStyle(color: primaryTextColor),),
+        Text(Strings.techs,
+          style: TextStyle(
+              color: primaryTextColor,
+              fontWeight: FontWeight.bold
+          ),),
         for (var tech in member.favoriteTechs)
           Text(tech, style: TextStyle(color: primaryTextColor),),
       ],
