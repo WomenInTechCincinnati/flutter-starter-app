@@ -3,6 +3,7 @@ import 'package:flutter_app/data/models/member.dart';
 import 'package:flutter_app/ui/members/members_viewmodel.dart';
 import 'package:flutter_app/values/app_theme.dart';
 import 'package:flutter_app/values/strings.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
 class MembersScreen extends StatefulWidget {
@@ -125,15 +126,12 @@ class _MembersScreen extends State<MembersScreen> {
                         ])
                   ],
                 ),
-                // TODO HOBBIES
                 _buildHobbyList(member),
                 Container(
                   margin: EdgeInsets.only(top: 5.0),
                 ),
-                // TODO TECHS
                 _buildTechList(member),
-                // TODO LINKS
-                Row()
+                _buildLinksList(member),
               ],
             )));
   }
@@ -154,6 +152,49 @@ class _MembersScreen extends State<MembersScreen> {
   }
 
 
+  Widget _buildLinksList(Member member) {
+    return Row(
+      children: [
+        if (member.links.twitter != null) IconButton (
+          icon: FaIcon(FontAwesomeIcons.twitter, color: secondaryColorGrey),
+          onPressed: (){
+            _viewModel.launchUrl(member.links.twitter);
+          },
+        ),
+        if (member.links.facebook != null) IconButton (
+          icon: FaIcon(FontAwesomeIcons.facebook, color: secondaryColorGrey),
+          onPressed: (){
+            _viewModel.launchUrl(member.links.facebook);
+          },
+        ),
+        if (member.links.linkedin != null) IconButton (
+          icon: FaIcon(FontAwesomeIcons.linkedin, color: secondaryColorGrey),
+          onPressed: (){
+            _viewModel.launchUrl(member.links.linkedin);
+          },
+        ),
+        if (member.links.github != null) IconButton (
+          icon: FaIcon(FontAwesomeIcons.github, color: secondaryColorGrey),
+          onPressed: (){
+            _viewModel.launchUrl(member.links.github);
+          },
+        ),
+        if (member.links.meetup != null) IconButton (
+          icon: FaIcon(FontAwesomeIcons.meetup, color: secondaryColorGrey),
+          onPressed: (){
+            _viewModel.launchUrl(member.links.meetup);
+          },
+        ),
+        if (member.links.website != null) IconButton (
+          icon: FaIcon(FontAwesomeIcons.link, color: secondaryColorGrey),
+          onPressed: (){
+            _viewModel.launchUrl(member.links.website);
+          },
+        ),
+      ],
+    );
+  }
+
   Widget _buildTechList(Member member) {
     return Wrap(
       spacing: 8.0,
@@ -161,8 +202,7 @@ class _MembersScreen extends State<MembersScreen> {
       children: [
         Text(Strings.techs,
           style: TextStyle(
-              color: primaryTextColor,
-              fontWeight: FontWeight.bold
+              color: primaryTextColor, fontWeight: FontWeight.bold
           ),),
         for (var tech in member.favoriteTechs)
           Text(tech, style: TextStyle(color: primaryTextColor),),
