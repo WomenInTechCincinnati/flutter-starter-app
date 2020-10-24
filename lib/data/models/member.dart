@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_app/data/models/links.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'member.g.dart';
@@ -23,8 +24,11 @@ class Member extends Equatable {
   @JsonKey(name: "favorite_techs")
   final List<String> favoriteTechs;
 
+  @JsonKey(name: "links")
+  final Links links;
+
   Member({
-    this.name, this.imageUrl, this.location, this.hobbyList, this.favoriteTechs
+    this.name, this.imageUrl, this.location, this.hobbyList, this.favoriteTechs, this.links
   });
 
   @override

@@ -6,4 +6,5 @@ class Strings {
   static String get contact => "Contact";
   static String get hobbies => "Hobbies:";
   static String get techs => "Techs:";
+
 }

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/app/clients/wwcode_api_client.dart';
+import 'package:flutter_app/app/interactors/app_interactor.dart';
 import 'package:flutter_app/app/interactors/member_interactor.dart';
 import 'package:flutter_app/app/interactors/wwcode_api_interactor.dart';
 import 'package:flutter_app/values/app_theme.dart';
@@ -75,7 +76,8 @@ class _AppProvidersFutureState extends State<_AppProvidersFuture> {
   ThemeData _appTheme;
   WWCodeApiClient _apiClient; 
   WWCodeApiInteractor _apiInteractor; 
-  MemberInteractor _memberInteractor; 
+  MemberInteractor _memberInteractor;
+  AppInteractor _appInteractor;
 
   _AppProvidersFutureState(this._variant);
 
@@ -86,7 +88,8 @@ class _AppProvidersFutureState extends State<_AppProvidersFuture> {
     _appTheme = AppTheme.createThemeData();
     _apiClient = WWCodeApiClient(_variant);
     _apiInteractor = WWCodeApiInteractor(_apiClient); 
-    _memberInteractor = MemberInteractor(_apiInteractor); 
+    _memberInteractor = MemberInteractor(_apiInteractor);
+    _appInteractor = AppInteractor();
     
   }
 
@@ -104,7 +107,8 @@ class _AppProvidersFutureState extends State<_AppProvidersFuture> {
         Provider.value(value: _appTheme),
         Provider.value(value: _apiClient), 
         Provider.value(value: _apiInteractor), 
-        Provider.value(value: _memberInteractor)
+        Provider.value(value: _memberInteractor),
+        Provider.value(value: _appInteractor)
       ],
       child: widget.child,
     );

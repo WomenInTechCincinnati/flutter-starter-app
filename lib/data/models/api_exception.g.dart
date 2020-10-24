@@ -6,16 +6,14 @@ part of 'api_exception.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-APIException _$APIExceptionFromJson(Map json) {
+APIException _$APIExceptionFromJson(Map<String, dynamic> json) {
   return APIException(
     json['status'] as int,
     json['message'] as String,
     (json['errors'] as List)
         ?.map((e) => e == null
-        ? null
-        : APIExceptionReason.fromJson((e as Map)?.map(
-          (k, e) => MapEntry(k as String, e),
-    )))
+            ? null
+            : APIExceptionReason.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
 }
@@ -27,7 +25,7 @@ Map<String, dynamic> _$APIExceptionToJson(APIException instance) =>
       'errors': instance.errors,
     };
 
-APIExceptionReason _$APIExceptionReasonFromJson(Map json) {
+APIExceptionReason _$APIExceptionReasonFromJson(Map<String, dynamic> json) {
   return APIExceptionReason(
     json['path'] as String,
     json['message'] as String,

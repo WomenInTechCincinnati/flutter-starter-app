@@ -14,6 +14,9 @@ Member _$MemberFromJson(Map<String, dynamic> json) {
     hobbyList: (json['hobbies'] as List)?.map((e) => e as String)?.toList(),
     favoriteTechs:
         (json['favorite_techs'] as List)?.map((e) => e as String)?.toList(),
+    links: json['links'] == null
+        ? null
+        : Links.fromJson(json['links'] as Map<String, dynamic>),
   );
 }
 
@@ -23,4 +26,5 @@ Map<String, dynamic> _$MemberToJson(Member instance) => <String, dynamic>{
       'location': instance.location,
       'hobbies': instance.hobbyList,
       'favorite_techs': instance.favoriteTechs,
+      'links': instance.links,
     };
