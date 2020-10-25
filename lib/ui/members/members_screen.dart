@@ -85,7 +85,7 @@ class _MembersScreen extends State<MembersScreen> {
               children: [
                 Row(
                   children: [
-                    Container(
+                    if (member.imageUrl != null) Container(
                         margin: EdgeInsets.fromLTRB(0, 0, 10, 10),
                         child: CircleAvatar(
                           radius: 55,
@@ -94,6 +94,19 @@ class _MembersScreen extends State<MembersScreen> {
                             child: CircleAvatar(
                               radius: 50,
                               backgroundImage: NetworkImage(member.imageUrl),
+                            ),
+                            colorFilter: greyScaleColorFilter,
+                          ),
+                        )),
+                    if (member.imageUrl == null) Container(
+                        margin: EdgeInsets.fromLTRB(0, 0, 10, 10),
+                        child: CircleAvatar(
+                          radius: 55,
+                          backgroundColor: primaryColorTeal,
+                          child: ColorFiltered(
+                            child: CircleAvatar(
+                              radius: 50,
+                              backgroundImage: AssetImage('assets/cincinnati_skyline.jpg'),
                             ),
                             colorFilter: greyScaleColorFilter,
                           ),
