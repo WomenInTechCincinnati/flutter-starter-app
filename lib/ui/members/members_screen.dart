@@ -93,7 +93,7 @@ class _MembersScreen extends State<MembersScreen> {
                           child: ColorFiltered(
                             child: CircleAvatar(
                               radius: 50,
-                              backgroundImage: NetworkImage(member.imageUrl),
+                              backgroundImage: (member.imageUrl != null) ? NetworkImage(member.imageUrl) : AssetImage('assets/cincinnati_skyline.jpg'),
                             ),
                             colorFilter: greyScaleColorFilter,
                           ),
