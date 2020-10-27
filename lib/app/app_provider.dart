@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_app/app/clients/wwcode_api_client.dart';
 import 'package:flutter_app/app/interactors/app_interactor.dart';
 import 'package:flutter_app/app/interactors/member_interactor.dart';
+import 'package:flutter_app/app/interactors/quote_interactor.dart';
 import 'package:flutter_app/app/interactors/wwcode_api_interactor.dart';
 import 'package:flutter_app/values/app_theme.dart';
 import 'package:flutter_app/values/variants.dart';
@@ -78,6 +79,7 @@ class _AppProvidersFutureState extends State<_AppProvidersFuture> {
   WWCodeApiInteractor _apiInteractor; 
   MemberInteractor _memberInteractor;
   AppInteractor _appInteractor;
+  QuoteInteractor _quoteInteractor;
 
   _AppProvidersFutureState(this._variant);
 
@@ -90,6 +92,7 @@ class _AppProvidersFutureState extends State<_AppProvidersFuture> {
     _apiInteractor = WWCodeApiInteractor(_apiClient); 
     _memberInteractor = MemberInteractor(_apiInteractor);
     _appInteractor = AppInteractor();
+    _quoteInteractor = QuoteInteractor(_apiInteractor);
     
   }
 
@@ -108,7 +111,8 @@ class _AppProvidersFutureState extends State<_AppProvidersFuture> {
         Provider.value(value: _apiClient), 
         Provider.value(value: _apiInteractor), 
         Provider.value(value: _memberInteractor),
-        Provider.value(value: _appInteractor)
+        Provider.value(value: _appInteractor),
+        Provider.value(value: _quoteInteractor)
       ],
       child: widget.child,
     );

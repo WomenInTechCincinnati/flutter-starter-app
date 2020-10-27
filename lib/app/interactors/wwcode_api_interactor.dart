@@ -35,6 +35,7 @@ class WWCodeApiInteractor {
   }
 
   Future<Result<T>> _runNetworkAction<T>(Future<T> networkAction) {
-    return Result.capture(networkAction.catchError((error) => throw parseError(error)));
+    return Result.capture(
+        networkAction.catchError((error) => throw parseError(error)));
   }
 }
