@@ -30,7 +30,7 @@ Welcome to the Cincinnati Women Who Code starter flutter app repository, a Flutt
     Click the <img alt="WWC" src="assets/code.png" width="50" /> button and copy the url.
     Using the command line or your favorite method of interacting with git, clone the repo
     ```shell
-      git clone -b pasteInTheRepoNameHere
+      git clone pasteInTheRepoNameHere
       ```
     
       Change directory into the root of the repo 
