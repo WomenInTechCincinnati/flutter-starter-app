@@ -32,7 +32,7 @@ class Member extends Equatable {
   });
 
   @override
-  List<Object> get props => [name, imageUrl, location];
+  List<Object> get props => [name, imageUrl, location, hobbyList, favoriteTechs, links];
 
   @override
   bool get stringify => true;
