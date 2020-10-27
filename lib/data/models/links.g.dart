@@ -13,7 +13,7 @@ Links _$LinksFromJson(Map<String, dynamic> json) {
     linkedin: json['linkedIn'] as String,
     github: json['github'] as String,
     meetup: json['meetup'] as String,
-    website: json['website'] as String
+    website: json['website'] as String,
   );
 }
 
@@ -23,5 +23,5 @@ Map<String, dynamic> _$LinksToJson(Links instance) => <String, dynamic>{
       'linkedIn': instance.linkedin,
       'github': instance.github,
       'meetup': instance.meetup,
-      'website': instance.website
+      'website': instance.website,
     };
