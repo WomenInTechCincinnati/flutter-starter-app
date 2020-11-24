@@ -23,6 +23,7 @@ const MaterialColor primaryMaterialColor = MaterialColor(0xFF007a7c, {
 
 const Color primaryColorTeal = Color(0xFF007a7c);
 const Color primaryColorLight = Color(0xFF99E1DD);
+const Color primaryColorWhite = Color(0xFFFFFFFF);
 const Color secondaryColorGrey = Color(0xFF48484A);
 const Color accentColorNavy = Color(0xFF0F283C);
 const Color accentColorWhite = Color(0xFFF5F5F5);
