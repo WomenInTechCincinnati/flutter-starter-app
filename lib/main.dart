@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/ui/home.dart';
 import 'package:flutter_app/values/variants.dart';
+import 'package:flutter_app/ui/components/error_screen.dart';
 
 import 'app/app_provider.dart';
 
